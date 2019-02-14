@@ -1,0 +1,59 @@
+
+/*  left user profile dropdown */
+.navbar-nav>.user-menu>.dropdown-menu {
+    width: 119px;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu > li > a {
+  line-height: 23px !important;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu > li > a:hover {
+  color : #3a88bc;
+}
+
+.add-btn-div{
+  margin-bottom: 5px;
+}
+
+.alert {
+  margin-bottom: 8px;
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader {
+  border : 16px solid #f3f3f3;
+  border-radius : 50%;
+  border-top: 16px solid #3498db;
+  width  : 120px;
+  height : 120px;
+ -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation : spin 2s linear infinite;
+  position  : absolute;
+  left : 50%;
+  top  : 50%;
+  transform : translate(-50%,-50%);
+}
+
+
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
